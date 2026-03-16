@@ -6,7 +6,7 @@
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   min-height: 100vh;
 }
 
@@ -17,13 +17,20 @@
   }
 }
 
-.header,
-.sidebar,
-.main-content {
+div {
   border: 2px solid red;
 }
 
+.header,
+.sidebar,
+.main-content {
+  border: 2px solid yellowgreen;
+}
+
 .header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   grid-column: 2 / 3;
 }
 
