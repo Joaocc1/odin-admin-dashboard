@@ -10,6 +10,13 @@
   min-height: 100vh;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #444477;
+    color: #bbbbdd;
+  }
+}
+
 .header,
 .sidebar,
 .main-content {
