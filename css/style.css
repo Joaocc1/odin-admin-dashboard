@@ -35,5 +35,9 @@ div {
 }
 
 .sidebar {
+  display: grid;
+  grid-template-rows: 1fr 2fr 6fr;
+  align-items: start;
+  gap: 10px;
   grid-row: 1 / 3;
 }
