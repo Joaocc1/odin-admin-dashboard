@@ -83,10 +83,12 @@ body {
   border: none;
 }
 
-.user-info {
+.user-info,
+.user-buttons {
   display: flex;
   align-items: center;
   gap: 1rem;
+  justify-content: end;
   font-weight: bold;
 }
 
@@ -97,12 +99,6 @@ body {
 
 .user-info img {
   width: 40px;
-}
-
-.user-buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .user-greetings {
