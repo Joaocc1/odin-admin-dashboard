@@ -3,11 +3,27 @@
   margin: 0;
 }
 
+:root {
+  --clr-primary: #1992d4;
+  --clr-secondary: #e2e8f0;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-gray: #bbbbbb;
+  --clr-accent: #eabf5c;
+}
+
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 6fr;
   min-height: 100vh;
+}
+
+body {
+  font-family:
+    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--clr-black);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,9 +33,9 @@
   }
 }
 
-div {
+/*div {
   border: 2px solid red;
-}
+}*/
 
 .header,
 .sidebar,
@@ -27,12 +43,38 @@ div {
   border: 2px solid yellowgreen;
 }
 
+/* Header */
+
 .header {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 2fr;
   grid-template-columns: 2fr 1fr;
   grid-column: 2 / 3;
+  gap: 1rem;
+  padding: 1rem;
 }
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search svg {
+  width: 25px;
+  fill: var(--clr-black);
+}
+
+.search input {
+  background-color: var(--clr-secondary);
+  height: 25px;
+  width: 100%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+}
+
+/* Sidebar */
 
 .sidebar {
   display: grid;
