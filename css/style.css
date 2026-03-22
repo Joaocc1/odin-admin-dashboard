@@ -4,7 +4,7 @@
 }
 
 :root {
-  --clr-primary: #1992d4;
+  --clr-primary: #343638;
   --clr-secondary: #e2e8f0;
   --clr-white: #ffffff;
   --clr-black: #000000;
@@ -114,7 +114,7 @@ body {
 }
 
 .greeting p:last-child {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .user-greetings img {
