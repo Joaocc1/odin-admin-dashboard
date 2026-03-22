@@ -222,6 +222,9 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: var(--clr-white);
   border-radius: 7px;
   border-left: 10px solid var(--clr-accent);
@@ -230,4 +233,15 @@ body {
 
 .card p {
   color: var(--clr-gray);
+}
+
+.card svg {
+  width: 25px;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
 }
