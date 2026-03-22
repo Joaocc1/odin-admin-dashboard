@@ -193,8 +193,7 @@ body {
 
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
   padding: 1rem;
   background-color: var(--clr-secondary);
@@ -249,7 +248,7 @@ body {
 
 .announcements {
   grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  margin-bottom: 2rem;
 }
 
 .announcements-content,
@@ -261,6 +260,7 @@ body {
   padding: 1.5rem;
   gap: 20px;
   font-size: 0.9rem;
+  box-shadow: 5px 5px 10px -10px;
 }
 
 .announcements-content p,
